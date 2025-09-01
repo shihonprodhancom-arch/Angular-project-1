@@ -1,0 +1,16 @@
+ 
+<!-- <nav style="background: #007bff; padding: 10px;">
+<a routerLink=""routerLinkActive= "active" style="margin-right: 15px; color: antiquewhite;">Home</a>
+<a routerLink="/about"routerLinkActive= "active" style="margin-right: 15px; color: antiquewhite;">About</a>
+<a routerLink="/shop"routerLinkActive= "active" style="margin-right: 15px; color: antiquewhite;">Shop</a>
+<a routerLink="/abcd"routerLinkActive= "active" style="margin-right: 15px; color: antiquewhite;">Error</a>
+<a routerLink="/contact"routerLinkActive= "active" style="margin-right: 15px; color: antiquewhite;">Contact</a>
+</nav> -->
+ <app-nav *ngIf="isLoggedIn"></app-nav>
+ <div style="margin: 20px;">
+  <router-outlet></router-outlet>
+  
+  
+</div>
+<app-footer *ngIf="isLoggedIn"></app-footer>
+ 
